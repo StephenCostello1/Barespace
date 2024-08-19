@@ -33,7 +33,7 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
         #   build: npm run build  # If you have a build step
-        #   start: npm start      # If you need to start a server before testing
+          start: npm start      # If you need to start a server before testing
           wait-on: 'http://localhost:3000'  # Adjust to match your server's URL
           wait-on-timeout: 60  # Timeout for waiting for the server to start
 
