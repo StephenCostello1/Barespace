@@ -1,5 +1,3 @@
-
-
 context("Book appointment", () => {
 
 
@@ -17,15 +15,24 @@ context("Book appointment", () => {
 
         cy.get('.max-w-lg > .btn').click()
 
-        cy.get('.overflow-auto > :nth-child(2)').click()
+        cy.get('#__nuxt > div > div.bg-primaryBg.min-h-screen.min-w-screen > div > main > section > div.mt-2.overflow-auto.sm\\:max-h-\\[60vh\\].px-2.-mx-2.pb-20.lg\\:pb-0.pt-1 > div:nth-child(2)')
+        .click();
 
         cy.get('.px-4 > .btn').click()
 
         cy.get('.gap-2 > :nth-child(2)').click()
 
+        
+
+
+        cy.get('.overflow-auto > :nth-child(1)').click()
+
+
+        cy.get('.overflow-auto > :nth-child(1)').click()
+
         cy.get('.max-w-lg > .btn').click()
 
-        cy.get('.card > .btn').click()
+
 
         cy.get('.mt-4 > :nth-child(1)').click()
 
@@ -41,9 +48,9 @@ context("Book appointment", () => {
 
         cy.get('#headlessui-dialog-panel-30 > .input').type('none')
 
-        cy.get('#headlessui-dialog-panel-30 > .btn').click()
 
-        cy.get('.mt-4 > :nth-child(2)').click()
+
+        cy.get('#headlessui-dialog-panel-30 > .btn').click()
     })
 })
 
