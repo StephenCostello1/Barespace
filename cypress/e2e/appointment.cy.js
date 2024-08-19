@@ -13,7 +13,6 @@ context("Book appointment", () => {
         cy.get('[tabindex="0"]').click()
 
         cy.get('#__nuxt > div > div.bg-primaryBg.min-h-screen.min-w-screen > div > main > section > div.mt-4.pt-1.overflow-auto.sm\\:max-h-\\[60vh\\].px-2.-mx-2 > div:nth-child(1) > button', { timeout: 10000 })
-            .should('be.visible')
             .click();
 
         cy.get('.max-w-lg > .btn').click()
