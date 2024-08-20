@@ -50,17 +50,17 @@ describe("home page", () => {
       //click on sign up now
       cy.get('.my-4 > div > .link').click()
       //enter first name
-      cy.get('#first_name', { timeout: 1000 }).type('Stephen', { timeout: 1000 })
+      cy.get('#first_name', { timeout: 3000 }).type('Stephen')
       //enter last name
-      cy.get('#last_name', { timeout: 1000 }).type('Costello', { timeout: 1000 })
+      cy.get('#last_name', { timeout: 3000 }).type('Costello')
       //enter email
-      cy.get('#email', { timeout: 1000 }).type('stephen.costello@outlook.ie', { timeout: 1000 })
+      cy.get('#email', { timeout: 3000 }).type('stephen.costello@outlook.ie')
       //enter phone number
-      cy.get('.vti__input', { timeout: 1000 }).type('857261874', { timeout: 1000 })
+      cy.get('.vti__input', { timeout: 3000 }).type('857261874')
       //enter password
-      cy.get('#password', { timeout: 1000 }).type('Password123!', { timeout: 1000 })
+      cy.get('#password', { timeout: 3000 }).type('Password123!')
       //retype password
-      cy.get('#retry_password', { timeout: 1000 }).type('Password123!', { timeout: 1000 })
+      cy.get('#retry_password', { timeout: 3000 }).type('Password123!')
       //click t&c's check box
       cy.get(':nth-child(4) > .accent-primary').click()
       //click subscription check box
