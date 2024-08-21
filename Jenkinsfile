@@ -11,7 +11,7 @@ pipeline {
                 // Checkout the source code from GitHub
                 checkout([$class: 'GitSCM',
                     branches: [[name: '*/main']], // Adjust branch name if needed
-                    userRemoteConfigs: [[url: 'https://github.com/StephenCostello1/Barespace.git', credentialsId: '76439847-13e6-4e85-a7a2-d46552b5f5e7']]
+                    userRemoteConfigs: [[url: 'https://github.com/StephenCostello1/Barespace.git', credentialsId: 'github-access-token']]
                 ])
             }
         }
