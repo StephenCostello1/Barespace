@@ -2,7 +2,8 @@ pipeline {
     agent any
 
     environment {
-        // Define any environment variables here
+        // Define any environment variables here if needed
+        // Example: PATH="/usr/local/bin:${PATH}"
     }
 
     stages {
@@ -18,6 +19,10 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
+                // Ensure Node.js and npm are available
+                sh 'which node'
+                sh 'which npm'
+                
                 // Install dependencies (Node.js and Cypress)
                 sh 'npm install'
             }
@@ -25,6 +30,9 @@ pipeline {
 
         stage('Run Tests') {
             steps {
+                // Ensure Cypress is executable
+                sh 'ls -l node_modules/.bin/cypress'
+                
                 // Run Cypress tests
                 sh 'npx cypress run'
             }
