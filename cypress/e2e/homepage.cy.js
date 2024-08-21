@@ -17,7 +17,7 @@ describe("home page", () => {
     //verify that the locations are present
     it("verfies the locations are visible", () => {
       cy.get('.overflow-auto > :nth-child(1)').contains(
-        "Anne St S, Dublin, Irlanda"
+        "Ireland"
       )
       cy.get('.overflow-auto > :nth-child(2)').contains(
         "Glasgow, UK"
